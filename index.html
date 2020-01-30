@@ -5,13 +5,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http=equiv="X-UA-Compatible" content="ie=edge" />
         <title>Test</title>
-        <link rel="stylesheet" href="main.css" />
+        <link rel="stylesheet" href="/main.css" />
+
+        <script>
+            function myFunction() {
+              document.getElementById("panel-test").style.display = "block";
+            }
+        </script>
     </head>
     <body>
-        <h1>My First Heading</h1>
-<!-- PIERWSZE SPOTKANIE Z KASIĄ -->        
+<!-- HERO -->        
+        <div class="hero" id="index-html">
+            <h1 >Nauka Front-endu - strona organizacyjna</h1>
+            <p class="intro-text">Ta strona służy do organizacji nauki front-endu. Będą tutaj spisywane zadania, pytania, a także będzie tutaj zbiór linków pomocnych przy dalszej pracy.</p>
+            <a class="button" href="./subpages/1.html">Basicowa obsługa Github</a>
+            <a class="button" href="./subpages/2.html">Zdjęcia</a>
+        </div>
+<!-- end of HERO -->    
+   <p class="flip-test" onclick="myFunction()">Notatki z pierwszego spotkania z Kasią ></p>
+        <div id="panel-test">               
+    <xmp>
         <section>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel error asperiores veniam et quam pariatur magnam maxime! Quod, dolor. Maiores.</p>
         <!-- emmet -->
         <!-- css selectors + > () -->
         <!-- section>article>h1+p -->
@@ -25,22 +39,8 @@
         zapisywać pytania!
         zabookować spotkanie 2h z Kasią - code review - im więcej zrobisz tym lepiej
         -->
-        </section>
-<!-- PIERWSZA PRACA WŁASNA -->        
-        <section>
-            <h2>Podstawowe komendy gita:</h2>
-            <h3>Ściąganie wersji z repo:</h3>
-            <p>
-                git fetch --all<br>
-                git reset --hard origin/master<br>
-                git pull origin master
-            </p>   
-            <h3>Uploadowanie wersji do repo:</h3>
-            <p>
-                git commit -m "Commit message"<br>
-                git push origin master
-            </p>
-        </section>
-        
+        </section>  
+    </xmp> 
+        </div>
     </body>
 </html>
