@@ -1,8 +1,11 @@
 body {
-    background: green;
+    background: white;
 }
 h1 {
     color: blue;
     text-transform: uppercase;
     text-align: center;
+}
+section:nth-child(odd) {
+    background:darkgoldenrod;
 }
