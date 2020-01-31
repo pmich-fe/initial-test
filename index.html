@@ -1,46 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http=equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Test</title>
-        <link rel="stylesheet" href="/main.css" />
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Test</title>
+    <link rel="stylesheet" href="/main.css" />
 
-        <script>
-            function myFunction() {
-              document.getElementById("panel-test").style.display = "block";
-            }
-        </script>
-    </head>
-    <body>
-<!-- HERO -->        
-        <div class="hero" id="index-html">
-            <h1 >Nauka Front-endu - strona organizacyjna</h1>
-            <p class="intro-text">Ta strona służy do organizacji nauki front-endu. Będą tutaj spisywane zadania, pytania, a także będzie tutaj zbiór linków pomocnych przy dalszej pracy.</p>
-            <a class="button" href="./subpages/1.html">Basicowa obsługa Github</a>
-            <a class="button" href="./subpages/2.html">Zdjęcia</a>
-        </div>
-<!-- end of HERO -->    
-   <p class="flip-test" onclick="myFunction()">Notatki z pierwszego spotkania z Kasią ></p>
-        <div id="panel-test">               
-    <xmp>
+    <script>
+      function test1() {
+        var x = document.getElementById("notatki-1");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+    <script>
+      function test2() {
+        var x = document.getElementById("notatki-2");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!-- HERO -->
+    <header class="hero index-html">
+      <h1 class="hero-header">Nauka Front-endu - strona organizacyjna</h1>
+      <p class="intro-text">
+        Ta strona służy do organizacji nauki front-endu. Będą tutaj spisywane
+        zadania, pytania, a także będzie tutaj zbiór linków pomocnych przy
+        dalszej pracy.
+      </p>
+      <nav>
+        <a class="button" href="./subpages/1.html" title="">
+          Basicowa obsługa Github</a
+        >
+        <a class="button" href="./subpages/2.html">Zdjęcia</a>
+      </nav>
+    </header>
+    <!-- end of HERO -->
+    <main>
+      <article>
+        <!-- Sekcja notatek -->
         <section>
-        <!-- emmet -->
-        <!-- css selectors + > () -->
-        <!-- section>article>h1+p -->
+          <h2>Zbiór notatek ze spotkań Front-endowych</h2>
+          <h3>
+            <button class="button-show-more" onClick="test1();">
+              Notatki z pierwszego spotkania z Kasią >
+            </button>
+          </h3>
+          <div id="notatki-1" class="panel-show-more">
+            <xmp>
+        <!-- 
+        - emmet
+        - ss selectors + > ()
+        section>article>h1+p
+        =
         <section>
             <article>
                 <h1></h1>
                 <p></p>
             </article>
         </section>
-        <!-- sass + csswizardry + udemy tasks
-        zapisywać pytania!
-        zabookować spotkanie 2h z Kasią - code review - im więcej zrobisz tym lepiej
+        - sass + csswizardry + udemy tasks
+        - zapisywać pytania!
+        - zabookować spotkanie 2h z Kasią - code review - im więcej zrobisz tym lepiej
         -->
-        </section>  
-    </xmp> 
-        </div>
-    </body>
+            </xmp>
+          </div>
+          <h3>
+            <button class="button-show-more" onClick="test2();">
+              Notatki z drugiego spotkania z Kasią >
+            </button>
+          </h3>
+          <div id="notatki-2" class="panel-show-more">
+            <xmp>
+        <!--  
+        <header></header>
+        <main></main>
+        - dużo małych kawałków kodu, a nie jeden duzy///// ten nie musi mieć headera
+
+        poniżej wszystkie 5 zawsze powinny mieć headery:
+        <article>jest całością, ma początek i koniec</article>
+        <section>może grupować</section>
+        <aside>
+          dodatkowe informacje, bez ktrych da się zyć, może być pod spodem (byle
+          gdzie de facto)</aside>
+        <nav>jeden na stronie, czasami niekoniecznie jeden</nav>
+        <footer></footer>
+
+      <h3>Przykładowa struktura:</h3>
+      <header>
+        <h1></h1>
+        <nav>
+            <h2></h2>
+        </nav>
+      </header>
+      <main>
+        <article>
+          <h2></h2>
+        <section>
+              <h3></h3>
+        </section>
+        </article>
+        <aside>
+            <h2></h2>
+        </aside>
+      </main>
+        <footer>
+          <h2></h2>
+        </footer>
+        -->
+            </xmp>
+          </div>
+        </section>
+        <!-- end of Sekcja notatek -->
+        <!-- Sekcja Listy rzeczy do zrobienia -->
+        <section>
+          <h2>Lista rzeczy do zrobienia</h2>
+          <ul>
+            <li>Semantyka HTML !!!!!!!!</li>
+            <ul>
+              <li>Poczytać o tym</li>
+              <li>Ogarnąć podstrony</li>
+            </ul>
+            <li class="done">w3c validator - działa w tle!</li>
+            <li>
+              Wtruktura naglowkow => outline html document
+              <ul>
+                <li>Poczytać o tym</li>
+                <li>Fixnąć ten tu kod</li>
+              </ul>
+            </li>
+            <li>Css guidelines https://cssguidelin.es/</li>
+            <ul>
+              <li>Poczytać o tym</li>
+            </ul>
+            <li>Css reset, css normalize, base css</li>
+            <ul>
+              <li>Poczytać o tym</li>
+              <li>Zamontować tu w kodzie</li>
+              <li>Rozdzielić stylesheety zgodnie z selektorami css</li>
+            </ul>
+            <li>Focusable html elements</li>
+            <ul>
+              <li>Poczytać o tym</li>
+            </ul>
+            <li>
+              Seektory css
+              <ul>
+                <li>selektory elementow</li>
+                <li>selektory klas</li>
+                <li>selektory id</li>
+                <li>selektory pseudoklas</li>
+                <li>selektory pseudoelementwo</li>
+                <li>selektory mieszane</li>
+                <li>inne typu * nth-child itp</li>
+                <li>cala reszta + > ~</li>
+                <ul>
+                  <li>Poczytać o tym</li>
+                </ul>
+              </ul>
+            </li>
+          </ul>
+          <h2>Dodatkowe pomysły na zrobienie:</h2>
+          <ul>
+            <li>layout</li>
+            <li>sensowna nawigacja</li>
+            <li>
+              skończyć kurs HTML z Udemy i rozpocząć projekt (zamiast sklepu,
+              nałożyć go a tą stronę z overview)
+            </li>
+          </ul>
+        </section>
+        <!-- end of Sekcja Listy rzeczy do zrobienia -->
+        <!-- Sekcja Pytań -->
+        <section>
+          <h2>Pytania gorejące:</h2>
+          <ul>
+            <li>
+              Dlaczego muszę double clickować na guziki żeby zaskoczył skrypt?
+            </li>
+            <li>Czy ten skrytpy można jakoś uprościć?</li>
+            <li>Czy nawigacja powinna być headerem?</li>
+          </ul>
+        </section>
+        <!-- end of Sekcja Pytań -->
+      </article>
+    </main>
+    <footer>Footer placeholder</footer>
+  </body>
 </html>
