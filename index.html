@@ -1,199 +1,84 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
+<!-- created 2020-02-16 -->
+<!-- Next steps: move h1 to image area, add search area and full width content image in content-->
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />    
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+<!-- meta tags area -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Test</title>
-    <link rel="stylesheet" href="/main.css" />
-
-    <script>
-      function test1() {
-        var x = document.getElementById("notatki-1");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-      }
-    </script>
-    <script>
-      function test2() {
-        var x = document.getElementById("notatki-2");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-      }
-    </script>
+    <meta name="language" content="ES">
+    <meta name="author" content="Pawel Michalek, pawel.michalek@protonmail.com" />
+    <meta name="keywords" content="html, css, training, learning, programming, java script, self-developement"/>
+    <meta name="robots" content="noindex,follow" />
+    <meta name="description" content=""/>
+<!-- end of meta tags area -->    
+    <title lang="English">Training page HTML5, CSS, Js - part of the self-developement program by Making Waves</title>
   </head>
-  <body>
-    <!-- HERO -->
-    <header class="hero index-html">
-      <h1 class="hero-header">Nauka Front-endu - strona organizacyjna</h1>
-      <p class="intro-text">
-        Ta strona służy do organizacji nauki front-endu. Będą tutaj spisywane
-        zadania, pytania, a także będzie tutaj zbiór linków pomocnych przy
-        dalszej pracy.
-      </p>
-      <nav>
-        <a class="button" href="./subpages/1.html" title="">
-          Basicowa obsługa Github</a
-        >
-        <a class="button" href="./subpages/2.html">Zdjęcia</a>
-      </nav>
-    </header>
-    <!-- end of HERO -->
-    <main>
-      <article>
-        <!-- Sekcja notatek -->
-        <section>
-          <h2>Zbiór notatek ze spotkań Front-endowych</h2>
-          <h3>
-            <button class="button-show-more" onClick="test1();">
-              Notatki z pierwszego spotkania z Kasią >
-            </button>
-          </h3>
-          <div id="notatki-1" class="panel-show-more">
-            <xmp>
-        <!-- 
-        - emmet
-        - ss selectors + > ()
-        section>article>h1+p
-        =
-        <section>
-            <article>
-                <h1></h1>
-                <p></p>
-            </article>
-        </section>
-        - sass + csswizardry + udemy tasks
-        - zapisywać pytania!
-        - zabookować spotkanie 2h z Kasią - code review - im więcej zrobisz tym lepiej
-        -->
-            </xmp>
-          </div>
-          <h3>
-            <button class="button-show-more" onClick="test2();">
-              Notatki z drugiego spotkania z Kasią >
-            </button>
-          </h3>
-          <div id="notatki-2" class="panel-show-more">
-            <xmp>
-        <!--  
-        <header></header>
-        <main></main>
-        - dużo małych kawałków kodu, a nie jeden duzy///// ten nie musi mieć headera
-
-        poniżej wszystkie 5 zawsze powinny mieć headery:
-        <article>jest całością, ma początek i koniec</article>
-        <section>może grupować</section>
-        <aside>
-          dodatkowe informacje, bez ktrych da się zyć, może być pod spodem (byle
-          gdzie de facto)</aside>
-        <nav>jeden na stronie, czasami niekoniecznie jeden</nav>
-        <footer></footer>
-
-      <h3>Przykładowa struktura:</h3>
+	<body>	
+<!-- navigation bar area -->      
       <header>
-        <h1></h1>
+        <div id="logoArea">
+          <a href="index.html"><img src="images/logo-image.png" id="logoImage"></img></a>
+        </div>
         <nav>
-            <h2></h2>
+          <h2>Dropdown menu</h2>
         </nav>
       </header>
+<!-- end of navigation bar area -->        
       <main>
-        <article>
-          <h2></h2>
-        <section>
-              <h3></h3>
+        <article>    
+<!-- header image area -->		
+        <section class="headerImageArea">
+          <img src="images/placeholder-image.jpg" class="headerImage"></img>
+          <!-- TUTAJ DODAĆ H1 -->	
         </section>
-        </article>
-        <aside>
-            <h2></h2>
-        </aside>
-      </main>
-        <footer>
-          <h2></h2>
-        </footer>
-        -->
-            </xmp>
+        
+        <aside class="leftSide">
+          <div class="desktopAdLeft">
+            banner
           </div>
-        </section>
-        <!-- end of Sekcja notatek -->
-        <!-- Sekcja Listy rzeczy do zrobienia -->
-        <section>
-          <h2>Lista rzeczy do zrobienia</h2>
+        </aside>
+        
+        <section class="middle">
+          <h1>Zadania domowe:</h1>
+          <h2>Lekturki do poczytania:</h2>
           <ul>
-            <li>Semantyka HTML !!!!!!!!</li>
-            <ul>
-              <li>Poczytać o tym</li>
-              <li>Ogarnąć podstrony</li>
-            </ul>
-            <li class="done">w3c validator - działa w tle!</li>
-            <li>
-              Wtruktura naglowkow => outline html document
-              <ul>
-                <li>Poczytać o tym</li>
-                <li>Fixnąć ten tu kod</li>
-              </ul>
-            </li>
-            <li>Css guidelines https://cssguidelin.es/</li>
-            <ul>
-              <li>Poczytać o tym</li>
-            </ul>
-            <li>Css reset, css normalize, base css</li>
-            <ul>
-              <li>Poczytać o tym</li>
-              <li>Zamontować tu w kodzie</li>
-              <li>Rozdzielić stylesheety zgodnie z selektorami css</li>
-            </ul>
-            <li>Focusable html elements</li>
-            <ul>
-              <li>Poczytać o tym</li>
-            </ul>
-            <li>
-              Seektory css
-              <ul>
-                <li>selektory elementow</li>
-                <li>selektory klas</li>
-                <li>selektory id</li>
-                <li>selektory pseudoklas</li>
-                <li>selektory pseudoelementwo</li>
-                <li>selektory mieszane</li>
-                <li>inne typu * nth-child itp</li>
-                <li>cala reszta + > ~</li>
-                <ul>
-                  <li>Poczytać o tym</li>
-                </ul>
-              </ul>
-            </li>
+            <li>Css guidelines: <a href="https://cssguidelin.es/">https://cssguidelin.es/</a></li>
+            <li>Css wizardry grids: <a href="https://github.com/csswizardry/csswizardry-grids/blob/master/csswizardry-grids.scss">https://github.com/csswizardry/csswizardry-grids/blob/master/csswizardry-grids.scss</a></li> 
+            <li>Sass basics: <a href="https://sass-lang.com/guide">https://sass-lang.com/guide</a></li>
+            <li>Full width containers in limited width parents: <a href="https://css-tricks.com/full-width-containers-limited-width-parents/">https://css-tricks.com/full-width-containers-limited-width-parents/</a></li>
+            <li>Full width browser bars: <a href="https://css-tricks.com/full-browser-width-bars/">https://css-tricks.com/full-browser-width-bars/</a></li>
           </ul>
-          <h2>Dodatkowe pomysły na zrobienie:</h2>
+          <h3>Zagadnienia do doczytania:</h3>
           <ul>
-            <li>layout</li>
-            <li>sensowna nawigacja</li>
-            <li>
-              skończyć kurs HTML z Udemy i rozpocząć projekt (zamiast sklepu,
-              nałożyć go a tą stronę z overview)
-            </li>
+            <li>Semantyka HTML</li>
+            <li>Budowanie layoutu za pomocą flexboxów</li>
+            <li>CSS Grid</li>
           </ul>
-        </section>
-        <!-- end of Sekcja Listy rzeczy do zrobienia -->
-        <!-- Sekcja Pytań -->
-        <section>
-          <h2>Pytania gorejące:</h2>
+          <h2>Dodatkowe narzędzia do ogarnięcia:</h2>
           <ul>
-            <li>
-              Dlaczego muszę double clickować na guziki żeby zaskoczył skrypt?
-            </li>
-            <li>Czy ten skrytpy można jakoś uprościć?</li>
-            <li>Czy nawigacja powinna być headerem?</li>
+            <li>CodePen: <a href="https://codepen.io/pen/">https://codepen.io/pen/</a></li>
           </ul>
+          <h2>Github:</h2>
+            <h3>Podstawowe komendy gita:</h3>
+              <h4>Ściąganie wersji z repo:</h4>
+                <p>git fetch --all<br />
+                  git reset --hard origin/master<br />
+                  git pull origin master</p>      
+              <h4>Uploadowanie wersji do repo:</h4>
+              <p>git add .<br />
+                git commit -m "Commit message"<br />
+                git push origin master</p>
         </section>
-        <!-- end of Sekcja Pytań -->
-      </article>
-    </main>
-    <footer>Footer placeholder</footer>
-  </body>
+        <div class="bottomMobileAd">
+          Ad
+        </div>
+        </article>             
+      </main>
+      <div id="footer">
+        footer
+      </div>
+    </body>
 </html>
