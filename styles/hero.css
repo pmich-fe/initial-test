@@ -26,6 +26,10 @@
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfe7fa', endColorstr='#6393c1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
+.technology {
+  display: inline-block;
+  margin-bottom: 10px;
+}
 
 /* Mobile view */
 @media (max-width: 600px) {

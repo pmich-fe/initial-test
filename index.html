@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./styles/stylesheet.css" />
     <!-- meta tags area -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="language" content="ES" />
+    <meta name="language" content="pl" />
     <meta
       name="author"
       content="Pawel Michalek, pawel.michalek@protonmail.com"
@@ -30,20 +30,23 @@
     <header>
       <div class="logoArea">
         <a href="index.html"
-          ><img src="images/logo-image.png" class="logoImage" alt=""
+          ><img
+            src="images/logo-image.png"
+            class="logoImage"
+            alt="hamburger menu icon"
         /></a>
       </div>
       <nav>
-        <h2>Dropdown menu</h2>
+        <img src="Images/menu_icon.svg" alt="" />
       </nav>
     </header>
     <!-- end of navigation bar area -->
     <main>
       <article>
-        <!-- header image area -->
+        <!-- hero image area -->
         <section class="hero">
           <div class="centerSection">
-            <div class="flex-column-reverse">
+            <div class="flexColumnReverse">
               <div>
                 <h1>Technologies that are being used on this website</h1>
               </div>
@@ -51,73 +54,30 @@
                 <ul class="technologies">
                   <li class="technology">
                     <strong class="visually-hidden">html</strong>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="386.916"
-                      height="546.133"
-                      viewBox="0 0 10000 14115"
-                    >
-                      <title>html5 logo</title>
-                      <path
-                        fill="#e44d26"
-                        d="m9089 12980l-4095 1135-4084-1134-910-10207h1e4"
-                      />
-                      <path fill="#f16529" d="m9088 3608h-4088v9639l3309-917" />
-                      <path
-                        d="m8132 4860h-3136v1252h3024m-113 1282h-2911v4555l2567-712m-2567-2591h1543l-145 1624-1398 377"
-                        fill="#fff"
-                      />
-                      <path
-                        d="m2198 8646h2801v-1252h-1657l-114-1282h1771v-1252h-3139m569 6378l2567 711 4-1v-1302l-4 1-1396-376-89-999h-1257"
-                        fill="#ebebeb"
-                      />
-                      <path
-                        d="m2149 0v629h-582v-629m-636 0v1903h636v-637h582v637h636v-1903m276 0v631h1 560v1272h636v-1272h560v-631m1757 0l-407 669-408-669m-663 0v1903h622v-943l438 677h11l438-677v943h633v-1903m317 0v1903h1531v-629h-895v-1274"
-                      />
-                    </svg>
+                    <img src="Images/HTML5_logo.svg" alt="html5 logo" />
                   </li>
                   <li class="technology">
                     <strong class="visually-hidden">css</strong>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="386.916"
-                      height="546.133"
-                      viewBox="0 0 362.734 512"
-                    >
-                      <title>css3 logo</title>
-                      <path
-                        fill="#264de4"
-                        d="M362.734 100.62l-33.046 370.199L181.145 512 33.011 470.877 0 100.62z"
-                      />
-                      <path
-                        fill="#2965f1"
-                        d="M301.397 447.246l28.24-316.352h-148.27v349.629z"
-                      />
-                      <path
-                        fill="#ebebeb"
-                        d="M75.677 268.217l4.07 45.41h101.62v-45.41zM181.367 176.305H67.499l4.128 45.411h109.74zM181.367 433.399v-47.246l-.199.053-50.574-13.656-3.233-36.217H81.776l6.362 71.301 93.02 25.823z"
-                      />
-                      <path
-                        d="M85.367 0h55v23h-32v23h32v23h-55zM151.367 0h55v20h-32v4h32v46h-55V49h32v-4h-32zM217.367 0h55v20h-32v4h32v46h-55V49h32v-4h-32z"
-                      />
-                      <path
-                        fill="#fff"
-                        d="M237.128 313.627l-5.271 58.894-50.647 13.67v47.244l93.094-25.801.683-7.672 10.671-119.551 1.108-12.194 8.198-91.912H181.21v45.411h63.988l-4.132 46.501H181.21v45.41z"
-                      />
-                    </svg>
+                    <img src="Images/CSS3_logo.svg" alt="css3 logo" />
                   </li>
                 </ul>
               </div>
             </div>
           </div>
         </section>
-
+        <!-- end of hero image area -->
+        <!-- aside area -->
         <aside class="leftSide">
           <div class="desktopAdLeft">
             <h2>GitHub info</h2>
-            <a href="https://github.com/pmich-fe/initial-test"
-              ><img src="images/github logo.png" class="max100" />Do Repo</a
-            >
+            <img
+              src="Images/github_logo.svg"
+              width="100%"
+              alt="Image description."
+            />
+            <p>
+              <a href="https://github.com/pmich-fe/initial-test">Do Repo</a>
+            </p>
             <h3>Podstawowe komendy gita:</h3>
             <h4>Ściąganie wersji z repo:</h4>
             <p>
@@ -133,9 +93,18 @@
             </p>
           </div>
         </aside>
-
+        <!-- end of aside area -->
+        <!-- content area -->
         <section class="middle">
-          <h1>Zadania domowe:</h1>
+          <p class="introText">
+            Lorem ipsum. Quos doloribus omnis vitae porro, ad voluptates, iure
+            ipsa rem mollitia explicabo a iste dolor obcaecati incidunt error.
+            Ipsum
+            <b>This is intro text placeholder</b> doloribus qui quod
+            exercitationem omnis voluptatibus atque soluta eius pariatur
+            quisquam, id nam dolor expedita. Accusantium tenetur dolorem,
+            repellendus cupiditate blanditiis quaerat aperiam unde harum?
+          </p>
           <h2>Lekturki do poczytania:</h2>
           <ul>
             <li>
@@ -211,12 +180,41 @@
           </ul>
           <h2>Do zrobienia w domu:</h2>
           <ul>
-            <li>Refaktoring stylów</li>
-            <li>Ujednoicić nazwenictwo stylów</li>
+            <li>Refaktoring stylów - zrobione</li>
+            <li>Ujednoicić nazwenictwo stylów - zrobione</li>
+          </ul>
+          <h2>Pytania na następne spotkanie:</h2>
+          <ul>
+            <li>
+              Jak zrobić, żeby te loga były responsywne i wycentrowane na
+              wszystkich rozdzielczościach?
+            </li>
+            <li>
+              Czy są jakieś przeciwwskazania, żeby używać tagu img dla .svg?
+            </li>
+            <li>
+              Jak zrobić, żeby "Dropdown menu" nie wywalało poza div na mobile
+            </li>
+            <li>
+              Czy jest jakiś sposób na sklonowanie kontentu bez trzymania go dwa
+              razy w .htmlu (chodzi o inny układ strony na mobile - aside na
+              dole)
+            </li>
+            <li>Czy sa się jakoś w HTML wrzucić kawałem kodu jako tekst?</li>
+            <li>
+              Jaki jest najlepszy sposób na hamburger menu? i w ogóle jak sobie
+              poradzić sprytnie z budową takiej nawigacji?
+            </li>
+            <li>Co nadaje headerowi1 taką a nie inną szerokość w desktopie?</li>
+            <li>
+              Zrobiłem ten błąd, że nie zacząłem od htmla i teraz mam pobabraną
+              strukturę headerów. Co robić?
+            </li>
           </ul>
         </section>
+        <!-- end of content area -->
         <div class="bottomMobileAd">
-          Ad
+          Ad placeholder
         </div>
       </article>
     </main>
