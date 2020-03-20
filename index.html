@@ -1,65 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- created 2020-02-16 -->
-<!-- Next steps: move h1 to image area, add search area and full width content image in content-->
+  <!-- created 2020-02-16 -->
+  <!-- Next steps: move h1 to image area, add search area and full width content image in content-->
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />    
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
-<!-- meta tags area -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="./styles/stylesheet.css" />
+    <!-- meta tags area -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="language" content="ES">
-    <meta name="author" content="Pawel Michalek, pawel.michalek@protonmail.com" />
-    <meta name="keywords" content="html, css, training, learning, programming, java script, self-developement"/>
+    <meta name="language" content="ES" />
+    <meta
+      name="author"
+      content="Pawel Michalek, pawel.michalek@protonmail.com"
+    />
+    <meta
+      name="keywords"
+      content="html, css, training, learning, programming, java script, self-developement"
+    />
     <meta name="robots" content="noindex,follow" />
-    <meta name="description" content=""/>
-<!-- end of meta tags area -->    
-    <title lang="English">Training page HTML5, CSS, Js - part of the self-developement program by Making Waves</title>
+    <meta name="description" content="" />
+    <!-- end of meta tags area -->
+    <title lang="en">
+      Training page HTML5, CSS, Js - part of the self-developement program by
+      Making Waves
+    </title>
   </head>
-	<body>	
-<!-- navigation bar area -->      
-      <header>
-        <div id="logoArea">
-          <a href="index.html"><img src="images/logo-image.png" id="logoImage"></img></a>
-        </div>
-        <nav>
-          <h2>Dropdown menu</h2>
-        </nav>
-      </header>
-<!-- end of navigation bar area -->        
-      <main>
-        <article>    
-<!-- header image area -->		
-        <section class="headerImageArea">
-          <img src="/images/htmlcss.png" class="headerImage"></img>
-          <!-- TUTAJ DODAĆ H1 -->	
+  <body>
+    <!-- navigation bar area -->
+    <header>
+      <div class="logoArea">
+        <a href="index.html"
+          ><img src="images/logo-image.png" class="logoImage" alt=""
+        /></a>
+      </div>
+      <nav>
+        <h2>Dropdown menu</h2>
+      </nav>
+    </header>
+    <!-- end of navigation bar area -->
+    <main>
+      <article>
+        <!-- header image area -->
+        <section class="hero">
+          <div class="centerSection">
+            <div class="flex-column-reverse">
+              <div>
+                <h1>Technologies that are being used on this website</h1>
+              </div>
+              <div>
+                <ul class="technologies">
+                  <li class="technology">
+                    <strong class="visually-hidden">html</strong>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="386.916"
+                      height="546.133"
+                      viewBox="0 0 10000 14115"
+                    >
+                      <title>html5 logo</title>
+                      <path
+                        fill="#e44d26"
+                        d="m9089 12980l-4095 1135-4084-1134-910-10207h1e4"
+                      />
+                      <path fill="#f16529" d="m9088 3608h-4088v9639l3309-917" />
+                      <path
+                        d="m8132 4860h-3136v1252h3024m-113 1282h-2911v4555l2567-712m-2567-2591h1543l-145 1624-1398 377"
+                        fill="#fff"
+                      />
+                      <path
+                        d="m2198 8646h2801v-1252h-1657l-114-1282h1771v-1252h-3139m569 6378l2567 711 4-1v-1302l-4 1-1396-376-89-999h-1257"
+                        fill="#ebebeb"
+                      />
+                      <path
+                        d="m2149 0v629h-582v-629m-636 0v1903h636v-637h582v637h636v-1903m276 0v631h1 560v1272h636v-1272h560v-631m1757 0l-407 669-408-669m-663 0v1903h622v-943l438 677h11l438-677v943h633v-1903m317 0v1903h1531v-629h-895v-1274"
+                      />
+                    </svg>
+                  </li>
+                  <li class="technology">
+                    <strong class="visually-hidden">css</strong>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="386.916"
+                      height="546.133"
+                      viewBox="0 0 362.734 512"
+                    >
+                      <title>css3 logo</title>
+                      <path
+                        fill="#264de4"
+                        d="M362.734 100.62l-33.046 370.199L181.145 512 33.011 470.877 0 100.62z"
+                      />
+                      <path
+                        fill="#2965f1"
+                        d="M301.397 447.246l28.24-316.352h-148.27v349.629z"
+                      />
+                      <path
+                        fill="#ebebeb"
+                        d="M75.677 268.217l4.07 45.41h101.62v-45.41zM181.367 176.305H67.499l4.128 45.411h109.74zM181.367 433.399v-47.246l-.199.053-50.574-13.656-3.233-36.217H81.776l6.362 71.301 93.02 25.823z"
+                      />
+                      <path
+                        d="M85.367 0h55v23h-32v23h32v23h-55zM151.367 0h55v20h-32v4h32v46h-55V49h32v-4h-32zM217.367 0h55v20h-32v4h32v46h-55V49h32v-4h-32z"
+                      />
+                      <path
+                        fill="#fff"
+                        d="M237.128 313.627l-5.271 58.894-50.647 13.67v47.244l93.094-25.801.683-7.672 10.671-119.551 1.108-12.194 8.198-91.912H181.21v45.411h63.988l-4.132 46.501H181.21v45.41z"
+                      />
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </section>
-        
+
         <aside class="leftSide">
           <div class="desktopAdLeft">
             <h2>GitHub info</h2>
-            <a href="https://github.com/pmich-fe/initial-test"><img src="images/github logo.png" class="max100">Do Repo</a>
+            <a href="https://github.com/pmich-fe/initial-test"
+              ><img src="images/github logo.png" class="max100" />Do Repo</a
+            >
             <h3>Podstawowe komendy gita:</h3>
-              <h4>Ściąganie wersji z repo:</h4>
-                <p>git fetch --all<br />
-                  git reset --hard origin/master<br />
-                  git pull origin master</p>      
-              <h4>Uploadowanie wersji do repo:</h4>
-              <p>git add .<br />
-                git commit -m "Commit message"<br />
-                git push origin master</p>
+            <h4>Ściąganie wersji z repo:</h4>
+            <p>
+              git fetch --all<br />
+              git reset --hard origin/master<br />
+              git pull origin master
+            </p>
+            <h4>Uploadowanie wersji do repo:</h4>
+            <p>
+              git add .<br />
+              git commit -m "Commit message"<br />
+              git push origin master
+            </p>
           </div>
         </aside>
-        
+
         <section class="middle">
           <h1>Zadania domowe:</h1>
           <h2>Lekturki do poczytania:</h2>
           <ul>
-            <li>Css guidelines: <a href="https://cssguidelin.es/">https://cssguidelin.es/</a></li>
-            <li>Css wizardry grids: <a href="https://github.com/csswizardry/csswizardry-grids/blob/master/csswizardry-grids.scss">https://github.com/csswizardry/csswizardry-grids/blob/master/csswizardry-grids.scss</a></li> 
-            <li>Sass basics: <a href="https://sass-lang.com/guide">https://sass-lang.com/guide</a></li>
-            <li>Full width containers in limited width parents: <a href="https://css-tricks.com/full-width-containers-limited-width-parents/">https://css-tricks.com/full-width-containers-limited-width-parents/</a></li>
-            <li>Full width browser bars: <a href="https://css-tricks.com/full-browser-width-bars/">https://css-tricks.com/full-browser-width-bars/</a></li>
+            <li>
+              Css guidelines:
+              <a href="https://cssguidelin.es/">https://cssguidelin.es/</a>
+            </li>
+            <li>
+              Css wizardry grids:
+              <a
+                href="https://github.com/csswizardry/csswizardry-grids/blob/master/csswizardry-grids.scss"
+                >https://github.com/csswizardry/csswizardry-grids/blob/master/csswizardry-grids.scss</a
+              >
+            </li>
+            <li>
+              Sass basics:
+              <a href="https://sass-lang.com/guide"
+                >https://sass-lang.com/guide</a
+              >
+            </li>
+            <li>
+              Full width containers in limited width parents:
+              <a
+                href="https://css-tricks.com/full-width-containers-limited-width-parents/"
+                >https://css-tricks.com/full-width-containers-limited-width-parents/</a
+              >
+            </li>
+            <li>
+              Full width browser bars:
+              <a href="https://css-tricks.com/full-browser-width-bars/"
+                >https://css-tricks.com/full-browser-width-bars/</a
+              >
+            </li>
+            <li>
+              Using SVG:
+              <a href="https://css-tricks.com/using-svg/"
+                >https://css-tricks.com/using-svg/</a
+              >
+            </li>
+            <li>
+              How to hide content visually:
+              <a href="https://a11yproject.com/posts/how-to-hide-content/"
+                >https://a11yproject.com/posts/how-to-hide-content/</a
+              >
+            </li>
           </ul>
           <h3>Zagadnienia do doczytania:</h3>
           <ul>
@@ -69,16 +189,39 @@
           </ul>
           <h2>Dodatkowe narzędzia do ogarnięcia:</h2>
           <ul>
-            <li>CodePen: <a href="https://codepen.io/pen/">https://codepen.io/pen/</a></li>
-          </ul>            
+            <li>
+              CodePen:
+              <a href="https://codepen.io/pen/">https://codepen.io/pen/</a>
+            </li>
+            <li>
+              SVG downsizer:
+              <a href="https://jakearchibald.github.io/svgomg/"
+                >https://jakearchibald.github.io/svgomg/</a
+              >
+            </li>
+            <li>
+              Icon bank: <a href="https://icomoon.io/">https://icomoon.io/</a>
+            </li>
+            <li>
+              Grandient bank:
+              <a href="https://www.colorzilla.com/gradient-editor/"
+                >https://www.colorzilla.com/gradient-editor/</a
+              >
+            </li>
+          </ul>
+          <h2>Do zrobienia w domu:</h2>
+          <ul>
+            <li>Refaktoring stylów</li>
+            <li>Ujednoicić nazwenictwo stylów</li>
+          </ul>
         </section>
         <div class="bottomMobileAd">
           Ad
         </div>
-        </article>             
-      </main>
-      <footer>
-        footer
-      </footer>
-    </body>
+      </article>
+    </main>
+    <footer>
+      footer
+    </footer>
+  </body>
 </html>
