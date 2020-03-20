@@ -42,58 +42,39 @@
     </header>
     <!-- end of navigation bar area -->
     <main>
-      <article>
-        <!-- hero image area -->
-        <section class="hero">
-          <div class="centerSection">
-            <div class="flexColumnReverse">
-              <div>
-                <h1>Technologies that are being used on this website</h1>
-              </div>
-              <div>
-                <ul class="technologies">
-                  <li class="technology">
-                    <strong class="visually-hidden">html</strong>
-                    <img src="Images/HTML5_logo.svg" alt="html5 logo" />
-                  </li>
-                  <li class="technology">
-                    <strong class="visually-hidden">css</strong>
-                    <img src="Images/CSS3_logo.svg" alt="css3 logo" />
-                  </li>
-                </ul>
-              </div>
+      <!-- hero image area -->
+      <section class="hero">
+        <div class="centerSection">
+          <div class="flexColumnReverse">
+            <div>
+              <h1>Technologies that are being used on this website</h1>
+            </div>
+            <div>
+              <ul class="technologies">
+                <li class="technology">
+                  <strong class="visually-hidden">html</strong>
+                  <img
+                    src="Images/HTML5_logo.svg"
+                    class="technologyLogo"
+                    alt="html5 logo"
+                  />
+                </li>
+                <li class="technology">
+                  <strong class="visually-hidden">css</strong>
+                  <img
+                    src="Images/CSS3_logo.svg"
+                    class="technologyLogo"
+                    alt="css3 logo"
+                  />
+                </li>
+              </ul>
             </div>
           </div>
-        </section>
-        <!-- end of hero image area -->
-        <!-- aside area -->
-        <aside class="leftSide">
-          <div class="desktopAdLeft">
-            <h2>GitHub info</h2>
-            <img
-              src="Images/github_logo.svg"
-              width="100%"
-              alt="Image description."
-            />
-            <p>
-              <a href="https://github.com/pmich-fe/initial-test">Do Repo</a>
-            </p>
-            <h3>Podstawowe komendy gita:</h3>
-            <h4>Ściąganie wersji z repo:</h4>
-            <p>
-              git fetch --all<br />
-              git reset --hard origin/master<br />
-              git pull origin master
-            </p>
-            <h4>Uploadowanie wersji do repo:</h4>
-            <p>
-              git add .<br />
-              git commit -m "Commit message"<br />
-              git push origin master
-            </p>
-          </div>
-        </aside>
-        <!-- end of aside area -->
+        </div>
+      </section>
+      <!-- end of hero image area -->
+      <!-- content wrapper -->
+      <div class="contentWrapper centerSection">
         <!-- content area -->
         <section class="middle">
           <p class="introText">
@@ -182,6 +163,7 @@
           <ul>
             <li>Refaktoring stylów - zrobione</li>
             <li>Ujednoicić nazwenictwo stylów - zrobione</li>
+            <li>wyczyścić style z media query które nie są nadpisywane</li>
           </ul>
           <h2>Pytania na następne spotkanie:</h2>
           <ul>
@@ -190,7 +172,8 @@
               wszystkich rozdzielczościach?
             </li>
             <li>
-              Czy są jakieś przeciwwskazania, żeby używać tagu img dla .svg?
+              Czy są jakieś przeciwwskazania, żeby używać tagu &lt;img&gt; dla
+              .svg?
             </li>
             <li>
               Jak zrobić, żeby "Dropdown menu" nie wywalało poza div na mobile
@@ -213,10 +196,41 @@
           </ul>
         </section>
         <!-- end of content area -->
+        <!-- mobile ad area -->
         <div class="bottomMobileAd">
           Ad placeholder
         </div>
-      </article>
+        <!-- end of mobile ad area -->
+        <!-- aside area -->
+        <aside class="leftSide">
+          <div class="desktopAdLeft">
+            <h2>GitHub info</h2>
+            <img
+              src="Images/github_logo.svg"
+              width="100%"
+              alt="Image description."
+            />
+            <p>
+              <a href="https://github.com/pmich-fe/initial-test">Do Repo</a>
+            </p>
+            <h3>Podstawowe komendy gita:</h3>
+            <h4>Ściąganie wersji z repo:</h4>
+            <p>
+              git fetch --all<br />
+              git reset --hard origin/master<br />
+              git pull origin master
+            </p>
+            <h4>Uploadowanie wersji do repo:</h4>
+            <p>
+              git add .<br />
+              git commit -m "Commit message"<br />
+              git push origin master
+            </p>
+          </div>
+        </aside>
+        <!-- end of aside area -->
+      </div>
+      <!-- end of content wrapper -->
     </main>
     <footer>
       footer

@@ -29,12 +29,32 @@
 .technology {
   display: inline-block;
   margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+.technologies {
+  display: flex;
+  margin: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.technologyLogo {
+  width: 100%;
 }
 
 /* Mobile view */
 @media (max-width: 600px) {
   .hero {
     margin-top: 50px;
+  }
+  .technologies {
+    display: block;
+    text-align: center;
+  }
+  .technology {
+    display: inline-block;
+    margin-bottom: 10px;
   }
 }
 

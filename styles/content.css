@@ -7,9 +7,7 @@ main {
 }
 .middle {
   background-color: #f8f4da;
-  float: left;
-  width: 60%;
-  margin-top: 0%;
+  padding: 10px 10px;
   font: normal 15.5px Calibri, sans-serif;
   line-height: 21px;
   color: #464646;
@@ -30,6 +28,8 @@ h1 {
   font-size: 60px;
   line-height: 70px;
   background-color: aquamarine;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 h2 {
@@ -38,12 +38,15 @@ h2 {
 h3 {
   color: #000000;
 }
+.contentWrapper {
+  display: flex;
+  flex-direction: row-reverse;
+}
 
 /* Mobile view */
 @media (max-width: 600px) {
   .middle {
     text-align: justify;
-    width: 94%;
     padding: 3%;
   }
   h1 {
@@ -52,23 +55,19 @@ h3 {
     font-size: 60px;
     line-height: 70px;
     background-color: aquamarine;
-    margin-left: 5%;
-    margin-right: 5%;
+  }
+  .contentWrapper {
+    display: block;
   }
 }
 /* Tablet view */
 @media screen and (min-width: 601px) and (max-width: 800px) {
   .middle {
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
   }
   h1 {
     text-align: left;
     font-size: 60px;
     line-height: 70px;
     background-color: aquamarine;
-    margin-left: 5%;
-    margin-right: 5%;
   }
 }
