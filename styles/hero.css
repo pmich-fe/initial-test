@@ -1,6 +1,4 @@
 .hero {
-  margin-top: 50px;
-  margin-bottom: 0px;
   max-height: 100%;
   max-width: 100%;
   z-index: 1;
@@ -26,41 +24,28 @@
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfe7fa', endColorstr='#6393c1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
-.technology {
-  display: inline-block;
-  margin-bottom: 10px;
-  padding: 0 10px;
-}
-
-.technologies {
+.technology-list {
   display: flex;
-  margin: 10px;
+  margin-top: 3rem;
   padding: 0;
   list-style: none;
 }
-
-.technologyLogo {
+.technology-item {
+  display: inline-block;
+  padding: 0 2rem;
+}
+.technology-logo {
   width: 100%;
 }
 
 /* Mobile view */
 @media (max-width: 600px) {
-  .hero {
-    margin-top: 50px;
-  }
-  .technologies {
+  .technology-list {
     display: block;
     text-align: center;
-  }
-  .technology {
-    display: inline-block;
-    margin-bottom: 10px;
   }
 }
 
 /* Tablet view */
 @media screen and (min-width: 601px) and (max-width: 800px) {
-  .hero {
-    margin-top: 50px;
-  }
 }

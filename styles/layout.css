@@ -1,9 +1,9 @@
-.centerSection {
-  max-width: 1080px;
+.center-section {
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-.flexColumnReverse {
+.flex-column-reverse {
   display: flex;
   justify-content: center;
   align-items: center;

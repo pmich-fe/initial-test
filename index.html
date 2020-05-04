@@ -27,43 +27,40 @@
   </head>
   <body>
     <!-- navigation bar area -->
-    <header>
-      <div class="logoArea">
-        <a href="index.html"
-          ><img
-            src="images/logo-image.png"
-            class="logoImage"
-            alt="hamburger menu icon"
-        /></a>
-      </div>
-      <nav>
-        <img src="Images/menu_icon.svg" alt="" />
-      </nav>
-    </header>
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        <li class="navbar-item">
+          LINK 111
+        </li>
+        <li class="navbar-item">
+          LINK 222
+        </li>
+      </ul>
+    </nav>
     <!-- end of navigation bar area -->
     <main>
       <!-- hero image area -->
       <section class="hero">
-        <div class="centerSection">
-          <div class="flexColumnReverse">
+        <div class="center-section">
+          <div class="flex-column-reverse">
             <div>
               <h1>Technologies that are being used on this website</h1>
             </div>
             <div>
-              <ul class="technologies">
-                <li class="technology">
+              <ul class="technology-list">
+                <li class="technology-item">
                   <strong class="visually-hidden">html</strong>
                   <img
                     src="Images/HTML5_logo.svg"
-                    class="technologyLogo"
+                    class="technology-logo"
                     alt="html5 logo"
                   />
                 </li>
-                <li class="technology">
+                <li class="technology-item">
                   <strong class="visually-hidden">css</strong>
                   <img
                     src="Images/CSS3_logo.svg"
-                    class="technologyLogo"
+                    class="technology-logo"
                     alt="css3 logo"
                   />
                 </li>
@@ -74,10 +71,10 @@
       </section>
       <!-- end of hero image area -->
       <!-- content wrapper -->
-      <div class="contentWrapper centerSection">
+      <div class="content-wrapper center-section">
         <!-- content area -->
-        <section class="middle">
-          <p class="introText">
+        <section class="content-area">
+          <p class="intro-text">
             Lorem ipsum. Quos doloribus omnis vitae porro, ad voluptates, iure
             ipsa rem mollitia explicabo a iste dolor obcaecati incidunt error.
             Ipsum
@@ -158,60 +155,45 @@
                 >https://www.colorzilla.com/gradient-editor/</a
               >
             </li>
+            <li>
+              Charref chart
+              <a href="https://dev.w3.org/html5/html-author/charref"
+                >https://dev.w3.org/html5/html-author/charref</a
+              >
+            </li>
           </ul>
           <h2>Do zrobienia w domu:</h2>
           <ul>
-            <li>Refaktoring stylów - zrobione</li>
-            <li>Ujednoicić nazwenictwo stylów - zrobione</li>
-            <li>wyczyścić style z media query które nie są nadpisywane</li>
+            <li>
+              Wyczyścić style z media query które nie są nadpisywane+puste -
+              zrobione!
+            </li>
           </ul>
           <h2>Pytania na następne spotkanie:</h2>
           <ul>
             <li>
-              Jak zrobić, żeby te loga były responsywne i wycentrowane na
-              wszystkich rozdzielczościach?
-            </li>
-            <li>
-              Czy są jakieś przeciwwskazania, żeby używać tagu &lt;img&gt; dla
-              .svg?
-            </li>
-            <li>
-              Jak zrobić, żeby "Dropdown menu" nie wywalało poza div na mobile
-            </li>
-            <li>
-              Czy jest jakiś sposób na sklonowanie kontentu bez trzymania go dwa
-              razy w .htmlu (chodzi o inny układ strony na mobile - aside na
-              dole)
-            </li>
-            <li>Czy sa się jakoś w HTML wrzucić kawałem kodu jako tekst?</li>
-            <li>
-              Jaki jest najlepszy sposób na hamburger menu? i w ogóle jak sobie
-              poradzić sprytnie z budową takiej nawigacji?
-            </li>
-            <li>Co nadaje headerowi1 taką a nie inną szerokość w desktopie?</li>
-            <li>
-              Zrobiłem ten błąd, że nie zacząłem od htmla i teraz mam pobabraną
-              strukturę headerów. Co robić?
+              1
             </li>
           </ul>
         </section>
         <!-- end of content area -->
         <!-- mobile ad area -->
-        <div class="bottomMobileAd">
+        <div class="bottom-mobile-ad">
           Ad placeholder
         </div>
         <!-- end of mobile ad area -->
         <!-- aside area -->
-        <aside class="leftSide">
-          <div class="desktopAdLeft">
-            <h2>GitHub info</h2>
-            <img
-              src="Images/github_logo.svg"
-              width="100%"
-              alt="Image description."
-            />
+        <aside class="aside">
+          <div class="aside-infobox">
+            <h2 style="text-align: center;">GitHub info</h2>
+
             <p>
-              <a href="https://github.com/pmich-fe/initial-test">Do Repo</a>
+              <a href="https://github.com/pmich-fe/initial-test"
+                ><img
+                  src="Images/github_logo.svg"
+                  width="100%"
+                  alt="Image description."
+              /></a>
             </p>
             <h3>Podstawowe komendy gita:</h3>
             <h4>Ściąganie wersji z repo:</h4>
